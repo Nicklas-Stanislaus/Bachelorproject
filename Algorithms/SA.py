@@ -48,6 +48,6 @@ def SA(fit_func, lims, dims, T = 100, T_freeze = 0.01, L = 10, a = 0.95, visuali
         T = T * a
     
     if visualize: 
-        return all_points
+        return best_points
     else: 
         return x

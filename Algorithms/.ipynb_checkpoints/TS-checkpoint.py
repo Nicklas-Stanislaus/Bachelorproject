@@ -1,5 +1,5 @@
 import numpy as np
-def TS(fit_func, lims, dims, iterations = 10000, m = 4, n_neighbors = 10, h0 = 0.2, visualize = False):
+def TS(fit_func, lims, dims, iterations = 10, m = 4, n_neighbors = 10, h0 = 0.2, visualize = False):
     # fitness function parameters 
     lims = [(lims[0], lims[1], dim) for dim in range(dims)]
 
