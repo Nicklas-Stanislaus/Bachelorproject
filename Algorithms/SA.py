@@ -1,11 +1,10 @@
 import numpy as np
-def SA(fit_func, lims, dims, T = 100, T_freeze = 0.01, L = 10, a = 0.95, visualize = False):
+def SA(fit_func, lims, dims, T = 100, L = 10, a = 0.95, iterations = 10, visualize = False):
     # fitness function parameters 
     lims = [(lims[0], lims[1], dim) for dim in range(dims)]
 
     # saving the best points for visualization 
-    all_points = []
-    best_points = []
+    points = []
 
     # Initializing point
     x = np.zeros(dims)
@@ -13,8 +12,7 @@ def SA(fit_func, lims, dims, T = 100, T_freeze = 0.01, L = 10, a = 0.95, visuali
         x[dim] = np.random.uniform(lim_low, lim_up) 
 
     # While temperature not at freezing temperature 
-    while T > T_freeze:
-
+    for it in range(iterations):
         # iterate for a given temperature 
         for i in range(L): 
             # Applying random permutation within the search space
@@ -34,20 +32,17 @@ def SA(fit_func, lims, dims, T = 100, T_freeze = 0.01, L = 10, a = 0.95, visuali
             #if energy lower accept new state
             if delta < 0:  
                 x = y
-                if visualize:
-                    best_points.append(y) # data for plotting
             # else accept with given probality
             elif np.random.rand() < np.exp((- delta) / T):
                 x = y 
-                if visualize:
-                    best_points.append(y) # data for plotting
-            if visualize:
-                all_points.append(y) # data for plotting
+          
+        if visualize:
+            points.append(x) # data for plotting
 
         # Temperature scheduling
         T = T * a
     
     if visualize: 
-        return best_points
+        return points
     else: 
         return x
