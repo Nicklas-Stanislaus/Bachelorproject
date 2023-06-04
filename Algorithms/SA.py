@@ -5,6 +5,8 @@ def SA(fit_func, lims, dims, T = 100, L = 10, a = 0.95, iterations = 10, visuali
 
     # saving the best points for visualization 
     points = []
+    best_value = 10**100
+    best_point = None
 
     # Initializing point
     x = np.zeros(dims)
@@ -28,6 +30,11 @@ def SA(fit_func, lims, dims, T = 100, L = 10, a = 0.95, iterations = 10, visuali
 
             # Evaluate change in energy 
             delta = fit_func(y) - fit_func(x)
+            
+            # Save best points
+            if fit_func(y) < best_value:
+                best_point = y
+                best_value = fit_func(y)
 
             #if energy lower accept new state
             if delta < 0:  
@@ -37,7 +44,7 @@ def SA(fit_func, lims, dims, T = 100, L = 10, a = 0.95, iterations = 10, visuali
                 x = y 
           
         if visualize:
-            points.append(x) # data for plotting
+            points.append(best_point) # data for plotting
 
         # Temperature scheduling
         T = T * a
@@ -45,4 +52,4 @@ def SA(fit_func, lims, dims, T = 100, L = 10, a = 0.95, iterations = 10, visuali
     if visualize: 
         return points
     else: 
-        return x
+        return best_point

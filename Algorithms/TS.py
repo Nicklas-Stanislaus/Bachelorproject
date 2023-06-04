@@ -1,5 +1,5 @@
 import numpy as np
-def TS(fit_func, lims, dims, iterations = 10, m = 4, n_neighbors = 10, h0 = 0.2, visualize = False):
+def TS(fit_func, lims, dims, m = 4, n_neighbors = 10, h0 = 0.2, iterations = 10, visualize = False):
     # fitness function parameters 
     lims = [(lims[0], lims[1], dim) for dim in range(dims)]
 
@@ -12,7 +12,7 @@ def TS(fit_func, lims, dims, iterations = 10, m = 4, n_neighbors = 10, h0 = 0.2,
         x[dim] = np.random.uniform(lim_low, lim_up) 
 
     # Best_sol value is also aspiration criteria
-    best_sol = 10**30
+    best_sol = 10**100
     best_point = x
 
     # saving the points for visualization 
@@ -72,7 +72,7 @@ def TS(fit_func, lims, dims, iterations = 10, m = 4, n_neighbors = 10, h0 = 0.2,
             best_pos = x
         
         if visualize:
-            points.append(x) # For visualization
+            points.append(best_pos) # For visualization
     
     if visualize: 
         return points

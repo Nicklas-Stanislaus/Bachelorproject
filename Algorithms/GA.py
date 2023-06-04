@@ -1,6 +1,6 @@
 import numpy as np
 ### Implemented from describitons in "Practical Genetic Algorithms" 
-def GA(fit_func, lims, dims, n_pop = 10, iterations = 10, x_rate = 0.5, mutation_rate = 0.2, visualize = False):
+def GA(fit_func, lims, dims, n_pop = 10, x_rate = 0.5, mutation_rate = 0.2, iterations = 10, visualize = False):
     # Fitness function parameters
     lims = [(lims[0], lims[1], dim) for dim in range(dims)]
 

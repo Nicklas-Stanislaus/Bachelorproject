@@ -59,7 +59,7 @@ def PSO(fit_func, lims, dims, n_particles = 10, w = 0.72, c1 = 1.2, c2 = 1.2, v_
                 index_best_overall = i
 
         if visualize:
-            best_points.append(best_pos[index_best_overall]) # data for visualization
+            best_points.append(np.copy(best_pos[index_best_overall])) # data for visualization
     
     if visualize: 
         return best_points
