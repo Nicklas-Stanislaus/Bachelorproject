@@ -1,0 +1,139 @@
+Sphere, optimal value: 0 
+
+SA time: 2.5319, TS time: 2.4994, GA time: 2.5298, PSO time: 2.5739
+Fastest: TS, slowest: PSO 
+
+RNG mean: 210.15249911628362, RNG std: 12.299941554127265, RNG best: 151.03564864824065
+TS mean: 0.010589603129248322, TS std: 0.0008655950647392907, TS best: 0.00750851562054082
+SA mean: 44.55665678049432, SA std: 4.05000985986226, SA best: 31.67862755048618
+GA mean: 0.004605287627781871, GA std: 0.0014354505083264471, GA best: 0.0017581051681842361
+PSO mean: 0.0033995051282847246, PSO std: 0.0007927045045734933, PSO best: 0.001567429388252725 
+
+Best average: PSO, value: 0.0033995051282847246
+Best val: PSO, value: 0.001567429388252725
+-------------------------------------------------------------------------
+Elliptic, optimal value: 0 
+
+SA time: 2.5469, TS time: 2.4532, GA time: 2.4688, PSO time: 2.4688
+Fastest: TS, slowest: SA 
+
+RNG mean: 914996672.6798018, RNG std: 143071686.7392634, RNG best: 522065387.7476637
+TS mean: 1563891.8321512945, TS std: 372611.2899584711, TS best: 689160.798563244
+SA mean: 197017348.60259143, SA std: 33749285.1040966, SA best: 115511150.13604191
+GA mean: 164307.75465159814, GA std: 131218.28182811552, GA best: 18965.39583719853
+PSO mean: 40.0, PSO std: 631.18935352238, PSO best: 0.0 
+
+Best average: PSO, value: 40.0
+Best val: PSO, value: 0.0
+-------------------------------------------------------------------------
+Rastrigin, optimal value: 0 
+
+SA time: 2.4919, TS time: 2.5313, GA time: 2.5469, PSO time: 2.4844
+Fastest: PSO, slowest: GA 
+
+RNG mean: 631.5194133755847, RNG std: 20.259482926822916, RNG best: 529.5619361709114
+TS mean: 440.65912799011437, TS std: 50.54385370961913, TS best: 301.9491458325906
+SA mean: 589.919976664603, SA std: 39.648406808323585, SA best: 497.1093091840509
+GA mean: 8.463748263822554, GA std: 1.669278865376034, GA best: 3.4064348995410114
+PSO mean: 54.621515291735385, PSO std: 12.42775003584215, PSO best: 30.19917593111444 
+
+Best average: GA, value: 8.463748263822554
+Best val: GA, value: 3.4064348995410114
+-------------------------------------------------------------------------
+Ackley, optimal value: 0 
+
+SA time: 2.5199, TS time: 2.4868, GA time: 2.4487, PSO time: 2.5138
+Fastest: GA, slowest: SA 
+
+RNG mean: 20.298589683651116, RNG std: 0.09021755527308079, RNG best: 19.972094013449286
+TS mean: 19.535108823269265, TS std: 0.1148806912231041, TS best: 19.10714009107872
+SA mean: 16.819183283517262, SA std: 0.5683799627976399, SA best: 15.334737207959453
+GA mean: 1.9328955805666121, GA std: 0.25549499608205095, GA best: 1.2008792727675162
+PSO mean: 3.1649979205703063, PSO std: 0.4506481789964518, PSO best: 2.0903095543960046 
+
+Best average: GA, value: 1.9328955805666121
+Best val: GA, value: 1.2008792727675162
+-------------------------------------------------------------------------
+Schwefel_1_2, optimal value: 0 
+
+SA time: 2.5978, TS time: 2.5118, GA time: 2.5518, PSO time: 2.5338
+Fastest: TS, slowest: SA 
+
+RNG mean: 127251.65039559075, RNG std: 15677.061945986585, RNG best: 87498.91166025907
+TS mean: 8513.687181592582, TS std: 2893.5308970159426, TS best: 3083.118290724245
+SA mean: 73211.83186123638, SA std: 9753.210004111663, SA best: 49990.48236986877
+GA mean: 49465.063820099516, GA std: 9712.616420654338, GA best: 26675.065862650266
+PSO mean: 9835.597453067323, PSO std: 16695.28361557398, PSO best: 0.0 
+
+Best average: TS, value: 8513.687181592582
+Best val: PSO, value: 0.0
+-------------------------------------------------------------------------
+Schwefel, optimal value: 0 
+
+SA time: 2.5257, TS time: 2.4886, GA time: 2.5218, PSO time: 2.4517
+Fastest: PSO, slowest: SA 
+
+RNG mean: 15329.198479065017, RNG std: 392.75764881965995, RNG best: 13679.432112345834
+TS mean: 8174.300899373126, TS std: 1091.6240620065043, TS best: 5332.4344215744895
+SA mean: 15584.916017685575, SA std: 481.32319592324035, SA best: 14453.155806309203
+GA mean: 101.06805343654551, GA std: 30.703093682295126, GA best: 44.34866084278838
+PSO mean: 12658.06358086772, PSO std: 1306.10648267152, PSO best: 9537.256945231029 
+
+Best average: GA, value: 101.06805343654551
+Best val: GA, value: 44.34866084278838
+-------------------------------------------------------------------------
+Rosenbrock, optimal value: 0 
+
+SA time: 2.4447, TS time: 2.4097, GA time: 2.5238, PSO time: 2.5178
+Fastest: TS, slowest: GA 
+
+RNG mean: 1461381.2352528046, RNG std: 190584.19916764242, RNG best: 799146.1892729102
+TS mean: 100.84205513185047, TS std: 55.3652357189033, TS best: 44.307981706803986
+SA mean: 79364.88691892859, SA std: 18274.633323452977, SA best: 40623.29179422552
+GA mean: 197.82306769481653, GA std: 46.438737669372856, GA best: 58.4712958184321
+PSO mean: 179.56307516604636, PSO std: 74.18974595464125, PSO best: 16.50141391102967
+
+Best average: TS, value: 100.84205513185047
+Best val: PSO, value: 16.50141391102967
+-------------------------------------------------------------------------
+Griewank, optimal value: 0 
+
+SA time: 2.5981, TS time: 2.436, GA time: 2.3617, PSO time: 2.4798
+Fastest: GA, slowest: SA 
+
+RNG mean: 787.8051441245449, RNG std: 47.81256675970241, RNG best: 630.372998830314
+TS mean: 670.4405661267389, TS std: 135.49881788718528, TS best: 370.9080799499026
+SA mean: 204.90771543357545, SA std: 22.56071662214525, SA best: 150.55950330692335
+GA mean: 1.6561765177981178, GA std: 0.1926099397387162, GA best: 1.3057359972491196
+PSO mean: 1.168177430684372, PSO std: 0.0327871311477108, PSO best: 1.0895467809290194 
+
+Best average: PSO, value: 1.168177430684372
+Best val: PSO, value: 1.0895467809290194
+-------------------------------------------------------------------------
+Sum_of_different_powers, optimal value: 0 
+
+SA time: 2.6629, TS time: 2.6519, GA time: 2.5768, PSO time: 2.5348
+Fastest: PSO, slowest: SA 
+
+RNG mean: 0.0954529030957193, RNG std: 0.030057383501503773, RNG best: 0.021348966246455974
+TS mean: 4.7059449331107833e-07, TS std: 1.9403957762092228e-07, TS best: 8.71211958315747e-08
+SA mean: 0.004524678123167315, SA std: 0.00416851587663998, SA best: 0.00034279470106689556
+GA mean: 2.2598552092942476e-06, GA std: 4.4889709386542245e-06, GA best: 9.380528098443698e-11
+PSO mean: 0.0, PSO std: 0.0, PSO best: 0.0 
+
+Best average: PSO, value: 0.0
+Best val: PSO, value: 0.0
+-------------------------------------------------------------------------
+Sum_squares, optimal value: 0 
+
+SA time: 2.6479, TS time: 7.3998, GA time: 2.5782, PSO time: 2.5157
+Fastest: PSO, slowest: TS 
+
+RNG mean: 18067.137554434175, RNG std: 1186.4679745357996, RNG best: 13568.863520061583
+TS mean: 1.1376978293644944, TS std: 0.10759854559968543, TS best: 0.7695647079845697
+SA mean: 4126.3768173129765, SA std: 446.9291655069715, SA best: 2922.048618195183
+GA mean: 0.6826639932783728, GA std: 0.2596373992430726, GA best: 0.2253823616292338
+PSO mean: 0.0, PSO std: 0.0, PSO best: 0.0 
+
+Best average: PSO, value: 0.0
+Best val: PSO, value: 0.0

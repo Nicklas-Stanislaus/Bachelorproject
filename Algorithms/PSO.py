@@ -28,8 +28,11 @@ def PSO(fit_func, lims, dims, n_particles = 10, w = 0.72, c1 = 1.2, c2 = 1.2, v_
     ### interation loop
     for it in range(iterations): 
         # Movement - calculating new position 
-        velocity = w * velocity + c1 * (best_pos - current_pos) \
-                                + c2 * (best_pos[index_best_overall] - current_pos)
+        r1 = np.random.rand(n_particles, 1)
+        r2 = np.random.rand(n_particles, 1)
+        
+        velocity = w * velocity + c1 * r1 * (best_pos - current_pos) \
+                                + c2 * r2 * (best_pos[index_best_overall] - current_pos)
 
         velocity[velocity > v_max] = v_max 
         velocity[velocity < -v_max] = -v_max
