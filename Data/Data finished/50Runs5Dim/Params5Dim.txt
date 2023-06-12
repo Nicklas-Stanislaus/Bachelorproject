@@ -1,0 +1,72 @@
+### PARAMETERS 
+function_params = [("Sphere", tf.Sphere, tf.Sphere_bounds, tf.Sphere_opt), 
+                       ("Elliptic", tf.Elliptic, tf.Elliptic_bounds, tf.Elliptic_opt),
+                       ("Rastrigin", tf.Rastrigin, tf.Rastrigin_bounds, tf.Rastrigin_opt),
+                       ("Ackley", tf.Ackley, tf.Ackley_bounds, tf.Ackley_opt),
+                       ("Schwefel_1_2", tf.Schwefel_1_2, tf.Schwefel_1_2_bounds, tf.Schwefel_1_2_opt),
+                       ("Schwefel", tf.Schwefel, tf.Schwefel_bounds, tf.Schwefel_opt),
+                       ("Rosenbrock", tf.Rosenbrock, tf.Rosenbrock_bounds, tf.Rosenbrock_opt),
+                       ("Griewank", tf.Griewank, tf.Griewank_bounds, tf.Griewank_opt),
+                       ("Sum_of_different_powers", tf.Sum_of_different_powers, tf.Sum_of_different_powers_bounds, tf.Sum_of_different_powers_opt),
+                       ("Sum_squares", tf.Sum_squares, tf.Sum_squares_bounds, tf.Sum_squares_opt)]
+
+    
+algorithm_params = [("Sphere", {"T":100, "L": 50, "a": 0.90, "iterations": 2500}, 
+                                   {"m" : 5, "n_neighbors" : 5, "h0" : 0.05, "iterations" : 15000}, 
+                                   {"n_pop": 10, "x_rate": 0.5, "mutation_rate": 0.01, "iterations" : 25000}, 
+                                   {"n_particles": 20, "w" : 0.73, "c1": 2.05, "c2": 2.05, "v_max": 0.1, "iterations": 14000},
+                                   {"iterations": 540000}), 
+                        
+                       ("Elliptic", {"T":100, "L": 50, "a": 0.90, "iterations": 1800}, 
+                                   {"m" : 10, "n_neighbors" : 5, "h0" : 1, "iterations" : 10000}, 
+                                   {"n_pop": 10, "x_rate": 0.5, "mutation_rate": 0.01, "iterations" : 25000}, 
+                                   {"n_particles": 20, "w" : 0.73, "c1": 2.05, "c2": 2.05, "v_max": 100, "iterations": 9000},
+                                   {"iterations": 410000}),
+                        
+                       ("Rastrigin", {"T":100, "L": 50, "a": 0.90, "iterations": 1400}, 
+                                   {"m" : 20, "n_neighbors" : 5, "h0" : 0.05, "iterations" : 6500}, 
+                                   {"n_pop": 10, "x_rate": 0.5, "mutation_rate": 0.01, "iterations" : 16000}, 
+                                   {"n_particles": 20, "w" : 0.73, "c1": 2.05, "c2": 2.05, "v_max": 0.1, "iterations": 4500},
+                                   {"iterations": 240000}),
+                        
+                       ("Ackley", {"T":100, "L": 50, "a": 0.90, "iterations": 1200}, 
+                                   {"m" : 20, "n_neighbors" : 5, "h0" : 0.05, "iterations" : 5500}, 
+                                   {"n_pop": 10, "x_rate": 0.5, "mutation_rate": 0.01, "iterations" : 16000}, 
+                                   {"n_particles": 20, "w" : 0.73, "c1": 5, "c2": 5, "v_max": 1, "iterations": 3200},
+                                   {"iterations": 200000}),
+                    
+                       ("Schwefel_1_2", {"T":100, "L": 50, "a": 0.90, "iterations": 1600}, 
+                                   {"m" : 20, "n_neighbors" : 5, "h0" : 1, "iterations" : 6000}, 
+                                   {"n_pop": 20, "x_rate": 0.5, "mutation_rate": 0.01, "iterations" : 12000}, 
+                                   {"n_particles": 20, "w" : 0.73, "c1": 2.05, "c2": 2.05, "v_max": 100, "iterations": 6000},
+                                   {"iterations": 330000}),
+                        
+                       ("Schwefel", {"T":100, "L": 50, "a": 0.90, "iterations": 1100}, 
+                                   {"m" : 20, "n_neighbors" : 5, "h0" : 1, "iterations" : 5500}, 
+                                   {"n_pop": 10, "x_rate": 0.5, "mutation_rate": 0.01, "iterations" : 16000}, 
+                                   {"n_particles": 20, "w" : 0.73, "c1": 5, "c2": 5, "v_max": 100, "iterations": 3200},
+                                   {"iterations": 210000}),
+                    
+                       ("Rosenbrock", {"T":100, "L": 50, "a": 0.90, "iterations": 1800}, 
+                                   {"m" : 20, "n_neighbors" : 5, "h0" : 0.1, "iterations" : 6000}, 
+                                   {"n_pop": 10, "x_rate": 0.5, "mutation_rate": 0.01, "iterations" : 21000}, 
+                                   {"n_particles": 20, "w" : 0.73, "c1": 5, "c2": 5, "v_max": 0.1, "iterations": 6300},
+                                   {"iterations": 350000}),
+                    
+                       ("Griewank", {"T":100, "L": 50, "a": 0.90, "iterations": 700}, 
+                                   {"m" : 20, "n_neighbors" : 5, "h0" : 1, "iterations" : 5000}, 
+                                   {"n_pop": 10, "x_rate": 0.5, "mutation_rate": 0.01, "iterations" : 10000}, 
+                                   {"n_particles": 20, "w" : 0.73, "c1": 5, "c2": 5, "v_max": 10, "iterations": 1800},
+                                   {"iterations": 100000}),
+                        
+                       ("Sum_of_different_powers", {"T":100, "L": 50, "a": 0.90, "iterations": 2400}, 
+                                   {"m" : 10, "n_neighbors" : 5, "h0" : 0.01, "iterations" : 10000}, 
+                                   {"n_pop": 10, "x_rate": 0.5, "mutation_rate": 0.01, "iterations" : 30000}, 
+                                   {"n_particles": 20, "w" : 0.73, "c1": 2.05, "c2": 2.05, "v_max": 1, "iterations": 13000},
+                                   {"iterations": 500000}),
+                    
+                       ("Sum_squares",{"T":10, "L": 50, "a": 0.90, "iterations": 2400}, 
+                                   {"m" : 10, "n_neighbors" : 5, "h0" : 0.1, "iterations" : 10000}, 
+                                   {"n_pop": 10, "x_rate": 0.5, "mutation_rate": 0.01, "iterations" : 27000}, 
+                                   {"n_particles": 20, "w" : 0.73, "c1": 2.05, "c2": 2.05, "v_max": 10, "iterations": 12000},
+                                   {"iterations": 490000})]
