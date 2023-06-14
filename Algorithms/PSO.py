@@ -1,6 +1,6 @@
 import numpy as np
 
-def PSO(fit_func, lims, dims, n_particles = 10, w = 0.72, c1 = 1.2, c2 = 1.2, v_max = 1, iterations = 10, visualize = False):
+def PSO(fit_func, lims, dims, n_particles = 10, w = 0.73, c1 = 2.05, c2 = 2.05, v_max = 1, iterations = 10, visualize = False):
     # implemented from pseudocode in "Metaheurestics" book 
     #### Fitness function parameters
     lims = [(lims[0], lims[1], dim) for dim in range(dims)]
@@ -31,8 +31,8 @@ def PSO(fit_func, lims, dims, n_particles = 10, w = 0.72, c1 = 1.2, c2 = 1.2, v_
         r1 = np.random.rand(n_particles, 1)
         r2 = np.random.rand(n_particles, 1)
         
-        velocity = w * velocity + c1 * r1 * (best_pos - current_pos) \
-                                + c2 * r2 * (best_pos[index_best_overall] - current_pos)
+        velocity = velocity + w * (c1 * r1 * (best_pos - current_pos) \
+                                 + c2 * r2 * (best_pos[index_best_overall] - current_pos))
 
         velocity[velocity > v_max] = v_max 
         velocity[velocity < -v_max] = -v_max
